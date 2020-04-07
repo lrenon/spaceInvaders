@@ -48,6 +48,11 @@ public class SpaceInvaders {
 		return marque;
 	}
 
+	public void deplacerVaisseauVersLaDroite() {
+		if (vaisseau.abscisse() < (longueur - 1))
+			vaisseau.seDeplacerVersLaDroite();
+	}
+
 	// toString
 	@Override
 	public String toString() {
