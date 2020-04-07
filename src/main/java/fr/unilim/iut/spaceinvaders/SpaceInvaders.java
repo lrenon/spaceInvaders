@@ -42,9 +42,9 @@ public class SpaceInvaders {
 	private char recupererMarqueDeLaPosition(int x, int y) {
 		char marque;
 		if (this.aUnVaisseauQuiOccupeLaPosition(x, y))
-			marque = 'V';
+			marque = MARQUE_VAISSEAU;
 		else
-			marque = '.';
+			marque = MARQUE_VIDE;
 		return marque;
 	}
 
@@ -52,25 +52,20 @@ public class SpaceInvaders {
 		if (vaisseau.abscisse() < (longueur - 1))
 			vaisseau.seDeplacerVersLaDroite();
 	}
-	
+
 	public void deplacerVaisseauVersLaGauche() {
 		if (vaisseau.abscisse() != 0)
 			vaisseau.seDeplacerVersLaGauche();
 	}
 
 	// toString
-	@Override
-	public String toString() {
-		return recupererEspaceJeuDansChaineASCII();
-	}
-
 	public String recupererEspaceJeuDansChaineASCII() {
 		StringBuilder espaceDeJeu = new StringBuilder();
 		for (int y = 0; y < hauteur; y++) {
 			for (int x = 0; x < longueur; x++) {
 				espaceDeJeu.append(recupererMarqueDeLaPosition(x, y));
 			}
-			espaceDeJeu.append('\n');
+			espaceDeJeu.append(MARQUE_FIN_LIGNE);
 		}
 		return espaceDeJeu.toString();
 	}
