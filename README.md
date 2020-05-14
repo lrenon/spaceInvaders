@@ -3,7 +3,8 @@
 - [Glossaire](#glossaire)
 - [Semaine n°1 : du 30 mars au 3 avril](#semaine1)
 - [Semaine n°2 : du 6 au 10 avril](#semaine2)
-- [Semaines n°3 et n°4 : du 13 au 24 avril](#semaine3)
+- [Semaines n°3 et n°4 : du 20 avril au 1er mai](#semaine3)
+- [Semaine n°5 : du 4 au 8 mai](#semaine5)
 
 -------------
 
@@ -131,7 +132,7 @@ Aucune.
 
 -------------
 
-## Semaines n°3 et n°4 : du 13 au 24 avril <a id="semaine3"></a>
+## Semaines n°3 et n°4 : du 20 avril au 1er mai <a id="semaine3"></a>
 
 
 ### Sprints et fonctionnalités réalisées 
@@ -219,5 +220,46 @@ Adapter le moteur graphique au jeu et gérer les classes que je n'ai pas créée
 
 ### Remarques diverses
 Aucune.
+
+------------- 
+
+
+## Semaine n°5 : du 4 au 8 mai <a id="semaine5"></a>
+
+
+### Sprints et fonctionnalités réalisées 
+
+#### Fonctionnalité n°5 : Ajouter un envahisseur dans le jeu (en cours)
+
+- Etape n°1 : Positionner un nouvel envahisseur  
+L'envahisseur est un sprite avec une dimension et une vitesse.  
+Une exception est levée en cas de débordement (DebordementEspaceJeuException).  
+  
+    
+-Etape n°2 : Faire apparaître le nouvel envahisseur.
+Ajout du dessin.
+
+### Fonctionnalité en cours d’implémentation :
+#### Fonctionnalité n°5 : Ajouter un envahisseur dans le jeu
+
+**L'objectif** de cette fonctionnalité est d' **ajouter un envahisseur dans le jeu** *afin de* donner un peu plus d'interactivité au jeu.
+
+Dans ce sprint, vous devrez donc :  
+	- créer un envahisseur à l'initialisation du jeu (pour l'instant le jeu ne comportera qu'un seul envahisseur)  
+	- faire en sorte que le jeu gère automatiquement le déplacement automatique de cet envahisseur (uniquement des allers-retours de droite à gauche pour ce sprint)  
+
+### Diagramme de classes  
+
+![Diagrammes de classes de la semaine 5](images/DiagClasses_S5.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°5)  
+
+![Nuage de mots de la semaine 5](images/NuageMots_S5.png)
+
+
+### Difficultés rencontrées 
+Faire les bons tests.
+
+### Remarques diverses
 
 -------------

@@ -1,4 +1,8 @@
-package fr.unilim.iut.spaceinvaders;
+package fr.unilim.iut.spaceinvaders.model.sprite;
+
+import fr.unilim.iut.spaceinvaders.model.Dimension;
+import fr.unilim.iut.spaceinvaders.model.Direction;
+import fr.unilim.iut.spaceinvaders.model.Position;
 
 public abstract class Sprite {
 
@@ -23,11 +27,11 @@ public abstract class Sprite {
 		return this.origine.abscisse();
 	}
 
-	protected int ordonneeLaPlusHaute() {
+	public int ordonneeLaPlusHaute() {
 		return this.origine.ordonnee();
 	}
 
-	protected int ordonneeLaPlusBasse() {
+	public int ordonneeLaPlusBasse() {
 		return ordonneeLaPlusHaute() - this.dimension.hauteur() + 1;
 	}
 
