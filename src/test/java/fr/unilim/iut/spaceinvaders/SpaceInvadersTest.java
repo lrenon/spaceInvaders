@@ -266,7 +266,7 @@ public class SpaceInvadersTest {
     public void test_MissileDisparait_QuandIlCommenceASortirDeEspaceJeu() {
  	   spaceinvaders.positionnerUnNouveauVaisseau(new Dimension(7, 2),new Position(5, 9), 1);
  	   spaceinvaders.tirerUnMissile(new Dimension(3, 2), 1);
- 	   for (int i = 1; i <=6 ; i++) {
+ 	   for (int i = 1; i <= 6 ; i++) {
  		   spaceinvaders.deplacerMissile();
  	   }
  	   spaceinvaders.deplacerMissile();
@@ -358,5 +358,39 @@ public class SpaceInvadersTest {
 			fail("Dépassement de l'envahisseur vers le haut en raison de sa hauteur trop importante : devrait déclencher une exception DebordementEspaceJeuException");
 		} catch (final DebordementEspaceJeuException e) {
 		}
+	}
+	
+	@Test
+	public void test_EnvahisseurAvanceAutomatique_SensInitial() {
+		spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(2, 1),  new Position(7, 0), 1);
+		spaceinvaders.deplacerEnvahisseur();
+		assertEquals("" + 
+				"........EE.....\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
+	}
+	
+	@Test
+	public void test_EnvahisseurAtteintLeBordDroit_ChangeDeDirection() {
+		spaceinvaders.positionnerUnNouvelEnvahisseur(new Dimension(2, 1),  new Position(13, 0), 1);
+		spaceinvaders.deplacerEnvahisseur();
+		assertEquals("" + 
+				"............EE.\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" + 
+				"...............\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
 	}
 }
