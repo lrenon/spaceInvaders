@@ -5,6 +5,8 @@
 - [Semaine n°2 : du 6 au 10 avril](#semaine2)
 - [Semaines n°3 et n°4 : du 20 avril au 1er mai](#semaine3)
 - [Semaine n°5 : du 4 au 8 mai](#semaine5)
+- [Semaine n°6 : du 11 au 15 mai](#semaine6)
+- [Semaine n°7 : du 18 au 22 mai](#semaine7)
 
 -------------
 
@@ -259,6 +261,71 @@ Dans ce sprint, vous devrez donc :
 
 ### Difficultés rencontrées 
 Faire les bons tests.
+
+### Remarques diverses
+
+-------------
+
+## Semaine n°6 : du 11 au 15 mai <a id="semaine6"></a>
+
+
+### Sprints et fonctionnalités réalisées 
+Aucune.
+
+### Fonctionnalité en cours d’implémentation :
+#### Fonctionnalité n°5 : Ajouter un envahisseur dans le jeu
+
+**L'objectif** de cette fonctionnalité est d' **ajouter un envahisseur dans le jeu** *afin de* donner un peu plus d'interactivité au jeu.
+
+Dans ce sprint, vous devrez donc :  
+	- créer un envahisseur à l'initialisation du jeu (pour l'instant le jeu ne comportera qu'un seul envahisseur)  
+	- faire en sorte que le jeu gère automatiquement le déplacement automatique de cet envahisseur (uniquement des allers-retours de droite à gauche pour ce sprint)  
+
+### Diagramme de classes  
+
+![Diagrammes de classes de la semaine 5](images/DiagClasses_S5.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°6)  
+
+![Nuage de mots de la semaine 5](images/NuageMots_S5.png)
+
+
+### Difficultés rencontrées 
+Impossible de faire les tests nécessaires et donc d'avancer dans mon code cette semaine.
+
+### Remarques diverses
+
+-------------
+
+## Semaine n°7 : du 18 au 22 mai <a id="semaine7"></a>
+
+
+### Sprints et fonctionnalités réalisées 
+
+#### Fonctionnalité n°5 : Ajouter un envahisseur dans le jeu (en cours)
+
+- Etape n°3 : Déplacement automatique de l'envahisseur dans un sens donné.
+L'envahisseur est un sprite avec un sens de déplacement initial (droite).
+Tant que l'envahisseur est présent dans l'espace de jeu, il se déplace horizontalement.
+  
+    
+-Etape n°4 : Changement de sens de déplacement.
+En cas de collision avec un bord de la fenêtre, l'envahisseur change de sens de déplacement.
+
+### Fonctionnalité en cours d’implémentation :
+Aucune.
+
+### Diagramme de classes  
+
+![Diagrammes de classes de la semaine 7](images/DiagClasses_S7.png)
+
+### Nuage de mots du projet spaceinvaders (séance n°7)  
+
+![Nuage de mots de la semaine 7](images/NuageMots_S7.png)
+
+
+### Difficultés rencontrées 
+Besoin d'aide pour réaliser les bons tests mais aucun soucis pour les faire passer en suite cette fois-ci.
 
 ### Remarques diverses
 
