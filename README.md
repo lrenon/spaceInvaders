@@ -1,4 +1,5 @@
-# Space Invaders 
+# Space Invaders  
+Projet réalisé en TDD (Test Driven Development) durant le deuxième semestre de mon DUT Info.
 
 - [Glossaire](#glossaire)
 - [Semaine n°1 : du 30 mars au 3 avril](#semaine1)
